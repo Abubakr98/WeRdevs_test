@@ -145,6 +145,6 @@
 }
 @media screen and (max-width: 360px) {
   .calendar .body .cell {
-    padding: 10px;
+    padding: 20px;
   }
 }

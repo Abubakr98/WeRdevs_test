@@ -24,5 +24,8 @@ const Main = styled(Container)`
     font-weight: 300;
     padding-bottom: 35px;
   }
+  @media (max-width: 1330px) {
+    padding: 0 10px;
+  }
 `;
 export { Main };
