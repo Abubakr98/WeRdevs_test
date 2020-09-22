@@ -12,7 +12,7 @@ const Modal = ({ modal, changeModalVisibility }) => {
   };
   const { isOpen } = modal;
   const moth = modal.data && [modal.data.split(' ').slice(0, 1)];
-  const day = modal.data && [modal.data.split(' ').slice(1, 2)];
+  const day = modal.data && modal.data.split(' ').slice(1, 3).join(' ');
   return (
     <React.Fragment>
       {isOpen && (
