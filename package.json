@@ -1,7 +1,7 @@
 {
   "name": "weredevs",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@rematch/core": "^1.4.0",
     "@testing-library/jest-dom": "^4.2.4",
