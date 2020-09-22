@@ -11,16 +11,14 @@ const Calendar = () => {
   return (
     <div className='calendar'>
       <div>
-        <Header setCurrentDate={setCurrentDate} currentDate={currentDate} />
+        <Header {...{ setCurrentDate, currentDate }} />
       </div>
       <div>
-        <Cells
-          currentDate={currentDate}
-          selectedDate={selectedDate}
-          setSelectedDate={setSelectedDate}
-        />
+        <Cells {...{ currentDate, selectedDate, setSelectedDate }} />
       </div>
-      <div>{<DaysOfWeek currentDate={currentDate} />}</div>
+      <div>
+        <DaysOfWeek currentDate={currentDate} />
+      </div>
     </div>
   );
 };

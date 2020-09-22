@@ -15,12 +15,12 @@
   padding: 25px;
   width: 510px;
   min-width: 300px;
-  /* border-radius: 5px; */
   position: relative;
   background: #fff;
-  height: 140px;
+  min-height: 140px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   background: #fbfbfb 0% 0% no-repeat padding-box;
   box-shadow: 10px 10px 20px #3b494a52;
 }
@@ -57,4 +57,10 @@
   right: 0;
   cursor: pointer;
   background: #fdd000 0% 0% no-repeat padding-box;
+}
+
+@media screen and (max-width: 500px) {
+  .modal-body {
+    justify-content: center;
+  }
 }

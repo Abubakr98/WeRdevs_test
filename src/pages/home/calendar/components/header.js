@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { format, addMonths, subMonths } from 'date-fns';
 
 const Header = ({ setCurrentDate, currentDate }) => {
@@ -13,7 +14,7 @@ const Header = ({ setCurrentDate, currentDate }) => {
     <div className='header row flex-middle'>
       <div className='column col-start'>
         <div className='icon' onClick={prevMonth}>
-        {'<'}
+          {'<'}
         </div>
       </div>
       <div className='column col-center'>
@@ -21,11 +22,14 @@ const Header = ({ setCurrentDate, currentDate }) => {
       </div>
       <div className='column col-end'>
         <div className='icon' onClick={nextMonth}>
-        {'>'}
+          {'>'}
         </div>
       </div>
     </div>
   );
 };
-
+Header.propTypes = {
+  currentDate: PropTypes.object.isRequired,
+  setCurrentDate: PropTypes.func.isRequired,
+};
 export default Header;

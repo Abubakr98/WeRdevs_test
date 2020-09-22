@@ -1,31 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
 
-import { darkFontColour, Container } from '../styles';
 import Layout from '../layout';
-
-const Main = styled(Container)`
-  justify-content: flex-start;
-  max-width: 1336px;
-  margin: 0 auto;
-  padding-top: 50px;
-  h1 {
-    text-align: left;
-    font-weight: 700;
-    font-size: 34px;
-    letter-spacing: -0.68px;
-    padding-bottom: 70px;
-    color: ${darkFontColour};
-  }
-  p {
-    text-align: left;
-    letter-spacing: 0.4px;
-    color: ${darkFontColour};
-    font-size: 20px;
-    line-height: 36px;
-    font-weight: 300;
-  }
-`;
+import { Main } from './styles';
 
 const About = () => {
   return (
@@ -38,8 +14,6 @@ const About = () => {
           Cicero's De Finibus in order to provide placeholder text to mockup
           various fonts for a type specimen book.
         </p>
-        <br />
-        <br />
         <p>
           It's difficult to find examples of lorem ipsum in use before Letraset
           made it popular as a dummy text in the 1960s, although McClintock says
@@ -48,20 +22,16 @@ const About = () => {
           passage, but the popularity of Cicero in the 15th century supports the
           theory that the filler text has been used for centuries.
         </p>
-        <br />
-        <br />
         <p>
           And anyways, as Cecil Adams reasoned, “[Do you really] think graphic
           arts supply houses were hiring classics scholars in the 1960s?”
           Perhaps. But it seems reasonable to imagine that there was a version
           in use far before the age of Letraset.
-          <br />
-          <br />
-
         </p>
-        
-        <p>McClintock wrote to Before & After to explain his discovery;</p>
+
         <p>
+          McClintock wrote to Before & After to explain his discovery;
+          <br />
           “What I find remarkable is that this text has been the industry's
           standard dummy text ever since some printer in the 1500s took a galley
           of type and scrambled it to make a type specimen book; it has survived
